@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="m-3">
     <header>
          <nav class="container mx-auto py-8">
             <div class="navbar justify-between bg-[#1090d81a] rounded-2xl ">
@@ -42,14 +42,85 @@
          </nav>
     </header>
 
-    <main>
+    <main class="container mx-auto">
         <!-- main container -->
-        <div>
+        <div class="flex flex-col md:flex-row">
             <!-- shape container -->
-            <div></div>
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-5">
+                <!-- Triangle card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img class="p-4" src="images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body flex items-center">
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area (A) =0.5 x b x h</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn bg-[#1090D8] text-white w-60">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Rectangle card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img class="p-4" src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body flex items-center">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = w x I</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn  bg-[#1090D8] text-white w-60">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Parallelogram card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img class="p-4" src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body flex items-center">
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b x h</p>
+                      <p>b=10cm, h=12cm</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn  bg-[#1090D8] text-white w-60">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Rhombus card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img class="p-4" src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body flex items-center">
+                      <h2 class="card-title">Rhombus</h2>
+                      <p>Area (A) =0.5 x d1 x d2</p>
+                        <p>d1 = 16cm  d2 = 8cm</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn  bg-[#1090D8] text-white w-60">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Pentagon card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img class="p-4" src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body flex items-center">
+                      <h2 class="card-title">Pentagon</h2>
+                      <p>Area (A) =0.5 x p x b</p>
+                      <p>p = 6cm, b = 10cm</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn  bg-[#1090D8] text-white w-60">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Ellipse card -->
+                <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img class="p-4" src="images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body flex items-center">
+                      <h2 class="card-title">Ellipse</h2>
+                      <p>Area (A) = ab</p>
+                      <p>a = 10cm, b = 4cm</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn  bg-[#1090D8] text-white w-60">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
             <!-- Area calculation container -->
-            <div class="w-96 border">
-                <h3 class="font-bold text-black text-xl text-center">Aria calculation</h3>
+            <div class="w-96 h-96 border-2 rounded-2xl">
+                <h3 class="font-bold text-black text-xl text-center p-2 border-b-2">Aria calculation</h3>
             </div>
         </div>
     </main>
