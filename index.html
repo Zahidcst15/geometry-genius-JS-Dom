@@ -53,8 +53,20 @@
                     <div class="card-body flex items-center">
                       <h2 class="card-title">Triangle</h2>
                       <p>Area (A) =0.5 x b x h</p>
+                      <!-- input area -->
+                      <div class="mb-2">
+                        <input id="Triangle-base" class="w-24 bg-[#F1F1F1] rounded pl-3" type="text" placeholder="b">
+                      <span>cm</span>
+                      <input id="Triangle-height" class="w-24 bg-[#F1F1F1] rounded pl-3" type="text" placeholder="h">
+                      <span>cm</span>
+                      </div>
+
+                    <div>
+                        <p class="font-bold">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                    </div>
+
                       <div class="card-actions justify-end">
-                        <button class="btn bg-[#1090D8] text-white w-60">Calculate</button>
+                        <button onclick="calculateTriangleArea()" class="btn bg-[#1090D8] text-white w-60">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -64,6 +76,13 @@
                     <div class="card-body flex items-center">
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area (A) = w x I</p>
+                      <!-- input area -->
+                      <div class="mb-3">
+                        <input class="w-24 bg-[#F1F1F1] rounded pl-3" type="text" placeholder="w">
+                      <span>cm</span>
+                      <input class="w-24 bg-[#F1F1F1] rounded pl-3" type="text" placeholder="I">
+                      <span>cm</span>
+                      </div>
                       <div class="card-actions justify-end">
                         <button class="btn  bg-[#1090D8] text-white w-60">Calculate</button>
                       </div>
@@ -120,9 +139,10 @@
             </div>
             <!-- Area calculation container -->
             <div class="w-96 h-96 border-2 rounded-2xl">
-                <h3 class="font-bold text-black text-xl text-center p-2 border-b-2">Aria calculation</h3>
+                <h3 class="font-bold text-black text-xl text-center p-2 border-b-2">Area calculation</h3>
             </div>
         </div>
     </main>
+    <script src="js/geometry.js"></script>
 </body>
 </html>
