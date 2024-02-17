@@ -11,9 +11,29 @@ function calculateTriangleArea(){
 
     // calculate Triangle area
     const area = 0.5 * base * height;
-    console.log('area of the triangle is:', area)
 
     // display Triangle area
     const triangleAreaSpan = document.getElementById('triangle-area');
     triangleAreaSpan.innerText = area;
+}
+
+function calculateRectangleArea(){
+    // Rectangle length value
+    const rectangleLengthInput = document.getElementById('rectangle-length');
+    const rectangleLengthValue = rectangleLengthInput.value;
+    const rectangleLength = parseFloat (rectangleLengthValue);
+
+    // rectangle width value
+    const rectangleWidthInput = document.getElementById('rectangle-width');
+    const rectangleWidthValue = rectangleWidthInput.value;
+    const rectangleWidth = parseFloat (rectangleWidthValue);
+
+    // calculate rectangle area
+      const rectangleArea = rectangleLength * rectangleWidth;
+
+    
+    // display rectangle area
+    const rectangleAreaSpan = document.getElementById('rectangle-area');
+    rectangleAreaSpan.innerText = rectangleArea;
+
 }
